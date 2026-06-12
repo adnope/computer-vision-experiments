@@ -1,0 +1,21 @@
+python main_finetune.py \
+  --model vit_base_patch16 \
+  --finetune /workspace/checkpoints/mae_pretrain_vit_base.pth \
+  --data_path /workspace/datasets/cifar10-imagefolder \
+  --nb_classes 10 \
+  --input_size 224 \
+  --epochs 30 \
+  --warmup_epochs 3 \
+  --batch_size 16 \
+  --accum_iter 8 \
+  --blr 5e-4 \
+  --layer_decay 0.65 \
+  --weight_decay 0.05 \
+  --drop_path 0.1 \
+  --mixup 0.8 \
+  --cutmix 1.0 \
+  --reprob 0.25 \
+  --num_workers 4 \
+  --seed 0 \
+  --output_dir /workspace/outputs/exp01_cifar10_mae_finetune \
+  --log_dir /workspace/outputs/exp01_cifar10_mae_finetune/tensorboard

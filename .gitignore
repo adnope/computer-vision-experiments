@@ -1,0 +1,7 @@
+checkpoints/*.pth
+datasets/cifar10-raw/
+datasets/cifar10-imagefolder/
+outputs/**/checkpoint-*.pth
+outputs/**/events.out.tfevents.*
+outputs/**/stdout.log
+__pycache__/ *.pyc
