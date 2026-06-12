@@ -109,6 +109,4 @@ outputs/cifar10_test_loss_curve.png
 
 Official MAE repository:
 
-```text
-https://github.com/facebookresearch/mae
-```
+[https://github.com/facebookresearch/mae](https://github.com/facebookresearch/mae)
