@@ -1,0 +1,16 @@
+\begin{table}[H]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}{llcccc}
+        \toprule
+        Mã TN & Thí nghiệm & Best epoch & Best Top-1 Acc. & Top-5 tại best epoch & Loss tại best epoch \\
+        \midrule
+        exp01 & MAE pretrained + fine-tuning & 26 & 98.17\% & 99.98\% & 0.2142 \\
+        exp02 & ViT train from scratch & 29 & 64.66\% & 96.79\% & 1.1192 \\
+        exp04 & MAE linear probing & 26 & 68.04\% & 97.37\% & 1.0325 \\
+        \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \caption{Kết quả định lượng của các thí nghiệm trên CIFAR-10}
+    \label{tab:group_cifar10_results}
+\end{table}

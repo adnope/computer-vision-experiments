@@ -1,0 +1,16 @@
+python main_linprobe.py \
+  --model vit_base_patch16 \
+  --cls_token \
+  --finetune /workspace/checkpoints/mae_pretrain_vit_base.pth \
+  --data_path /workspace/datasets/cifar10-imagefolder \
+  --nb_classes 10 \
+  --epochs 30 \
+  --warmup_epochs 3 \
+  --batch_size 64 \
+  --accum_iter 2 \
+  --blr 0.1 \
+  --weight_decay 0.0 \
+  --num_workers 4 \
+  --seed 0 \
+  --output_dir /workspace/outputs/exp04_cifar10_mae_linprobe \
+  --log_dir /workspace/outputs/exp04_cifar10_mae_linprobe/tensorboard

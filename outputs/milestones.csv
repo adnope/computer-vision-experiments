@@ -1,0 +1,4 @@
+experiment,epoch_1_acc1,epoch_2_acc1,epoch_3_acc1,epoch_10_acc1,epoch_20_acc1,epoch_30_acc1
+exp01_cifar10_mae_finetune,64.36,91.28,93.62,97.38,98.03,98.16
+exp02_cifar10_scratch,26.17,31.11,35.20,51.55,61.03,64.61
+exp04_cifar10_mae_linprobe,11.97,25.35,39.47,62.03,67.54,67.99

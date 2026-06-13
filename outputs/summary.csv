@@ -1,0 +1,5 @@
+experiment,status,name,short_name,dataset,model,training_mode,expected_epochs,epochs_logged,best_epoch_log,best_epoch,best_acc1,best_acc5_at_best_acc1,best_test_loss_at_best_acc1,last_epoch_log,last_epoch,last_acc1,last_acc5,last_test_loss,last_train_loss,n_parameters,notes
+exp01_cifar10_mae_finetune,completed,MAE pretrained + fine-tuning,MAE fine-tuning,CIFAR-10,ViT-B/16,Fine-tune toàn bộ từ MAE checkpoint,30,30,25,26,98.17,99.98,0.2142,29,30,98.16,99.99,0.2123,1.4525,85806346,
+exp02_cifar10_scratch,completed,ViT train from scratch,Scratch,CIFAR-10,ViT-B/16,Train toàn bộ từ random initialization,30,30,28,29,64.66,96.79,1.1192,29,30,64.61,96.77,1.1165,1.9375,85806346,
+exp04_cifar10_mae_linprobe,completed,MAE linear probing,Linear probing,CIFAR-10,ViT-B/16,"Freeze encoder, train linear head",30,30,25,26,68.04,97.37,1.0325,29,30,67.99,97.36,1.0341,1.2851,7690,
+exp03_mae_reconstruction_demo,qualitative,MAE reconstruction demo,Reconstruction,Ảnh minh họa,ViT-Large MAE visualization checkpoint,"Không huấn luyện, chỉ chạy reconstruction demo",,,,,,,,,,,,,,,Không có metric định lượng; dùng ảnh mae_reconstruction_grid.png trong báo cáo.
